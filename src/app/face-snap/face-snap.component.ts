@@ -19,4 +19,10 @@ export class FaceSnapComponent implements OnInit {
       this.snaps = 6;
       this.imageUrl = 'https://tinyurl.com/34eat443';
   }
+
+  onAddSnap(){
+    this.snaps++;
+  }
+
+
 }
