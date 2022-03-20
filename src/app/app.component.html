@@ -1,3 +1,2 @@
-<app-face-snap [faceSnap]="mySnap"></app-face-snap>
-<app-face-snap [faceSnap]="secondSnap"></app-face-snap>
-<app-face-snap [faceSnap]="thirdSnap" *ngIf="thirdSnap.snaps > 10"></app-face-snap>
+<app-face-snap *ngFor="let faceSnapElementofArray of faceSnaps"  
+[faceSnap]="faceSnapElementofArray"></app-face-snap>
