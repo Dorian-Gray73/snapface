@@ -12,29 +12,30 @@ export class AppComponent implements OnInit {
   thirdSnap !: FaceSnap
 
   ngOnInit(){
-    this.mySnap = new FaceSnap(
-    'Lena Söderberg',
-    'La fille qu on voit partout en informatique ',
-    'https://tinyurl.com/34eat443',
-    new Date(),
-    4
-    );
+    this.mySnap = {
+    title:'Lena Söderberg',
+    description:'La fille qu on voit partout en informatique ',
+    imageUrl:'https://tinyurl.com/34eat443',
+    createdDate: new Date(),
+    snaps : 4
+     };
 
-    this.secondSnap = new FaceSnap(
-      'Clara Morgane',
-      'Une autre belle femme',
-      'https://tinyurl.com/2p2yf5nm',
-      new Date(),
-      500
-      );
+    this.secondSnap = {
+      title:'Clara Morgane',
+      description:'Une autre belle femme',
+      imageUrl:'https://tinyurl.com/2p2yf5nm',
+      createdDate:new Date(),
+      snaps:500
+    };
 
-      this.thirdSnap = new FaceSnap(
-        'Kate Mara',
-        'l actrice de House of cards',
-        'https://tinyurl.com/nvnyjdzx',
-        new Date(),
-        37
-      );
+      this.thirdSnap = {
+        title:'Kate Mara',
+        description:'l actrice de House of cards',
+        imageUrl:'https://tinyurl.com/nvnyjdzx',
+        createdDate:new Date(),
+        snaps:37,
+        location:'House of cards'
+      };
 
 
 
