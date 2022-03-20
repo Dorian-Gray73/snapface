@@ -1,4 +1,16 @@
-.face-snap-card {
+.t1{
+  background-color: rgba(lightgreen, 0.4);
+  color: darkgreen;
+  button {
+    box-shadow: lightgreen 3px 3px 7px;
+    color: darkgreen;
+    &:active {
+      box-shadow: lightgreen 0 0 5px;
+    }
+  }
+}
+
+.t2 {
     box-sizing: border-box;
     width: 50%;
     margin: 20px auto;
@@ -26,7 +38,8 @@
       font-weight: 500;
       &:active {
         transform: translate(1px, 1px);
-        box-shadow: lightgray 0 0 5px;
-      }
+        box-shadow: lightgray 0 0 5px; 
     }
   }
+}
+

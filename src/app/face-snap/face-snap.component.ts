@@ -19,7 +19,7 @@ export class FaceSnapComponent implements OnInit {
   onAddSnap(){
     if (this.btnTxt == 'Oh SNAP' ) {
       this.faceSnap.snaps++;
-      this.btnTxt = 'snapped ';
+      this.btnTxt = 'snapped';
     } else {
       this.faceSnap.snaps--;
       this.btnTxt = 'Oh SNAP';
