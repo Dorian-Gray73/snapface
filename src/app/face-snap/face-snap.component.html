@@ -1,6 +1,6 @@
 <div class="t2" [ngClass]="{t1:btnTxt === 'snapped'}">
 <h2>{{faceSnap.title | uppercase }}</h2>
-<p>mis en ligne le {{faceSnap.createdDate}}</p>
+<p>mis en ligne le {{faceSnap.createdDate | date: ' d MMMM yyyy, à HH:mm' }}</p>
 <p>{{faceSnap.description}}</p>
 <p *ngIf="faceSnap.location"> Photo prise à {{faceSnap.location}}</p>
 <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title">
