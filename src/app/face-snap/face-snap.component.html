@@ -1,5 +1,5 @@
 <div class="t2" [ngClass]="{t1:btnTxt === 'snapped'}">
-<h2>{{faceSnap.title}}</h2>
+<h2>{{faceSnap.title | titlecase }}</h2>
 <p>mis en ligne le {{faceSnap.createdDate}}</p>
 <p>{{faceSnap.description}}</p>
 <p *ngIf="faceSnap.location"> Photo prise à {{faceSnap.location}}</p>
